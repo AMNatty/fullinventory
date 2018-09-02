@@ -1,0 +1,142 @@
+body,
+html {
+  height: 100%;
+}
+*:focus {
+  outline: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #303030;
+  font-family: sans-serif;
+}
+#topHeader {
+  z-index: 1;
+  color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background: #181818;
+  box-shadow: 0px 1px 5px black;
+}
+#topHeader #logoImageContainer {
+  height: 40px;
+  flex-grow: 0;
+}
+#topHeader .logoImg {
+  height: 40px;
+}
+#topHeader #headerName {
+  flex-grow: 0;
+  text-align: left;
+  font-size: 150%;
+}
+#topHeader #headerTools {
+  font-size: 110%;
+  display: block;
+  text-align: center;
+}
+#topHeader #headerTools #userSearch {
+  font-size: 90%;
+  background-color: #3c3c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+#appContainer {
+  flex: 1 0 auto;
+}
+#appFooter {
+  border-top: 5px solid #00456b;
+  background-color: #4b4b4b;
+  flex-shrink: 0;
+  color: white;
+}
+#appFooter ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+#appFooter ul li {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline;
+}
+#appFooter .footerText {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#appFooter .footerLink {
+  color: white;
+}
+#appFooter .footerLink:hover {
+  text-decoration: none;
+}
+.card {
+  background-color: white;
+  padding: 5px;
+}
+.card + .card {
+  border-top: 1px solid gray;
+}
+.cardSet {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.cardSet .card .nameHeader {
+  color: blue;
+}
+.cardSet .card .idDesc {
+  color: gray;
+  font-size: 80%;
+  font-style: italic;
+}
+.cardSet .card .idDesc::before {
+  content: "User ID: ";
+}
+.currencyDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.cardCurrency {
+  margin: 3px;
+  background-color: #303030;
+  box-shadow: 0px 1px 3px black;
+  line-height: 28px;
+  padding-right: 20px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  text-overflow: ellipsis;
+}
+.currencyIcon {
+  padding: 2px;
+  float: left;
+  background-color: #181818;
+  width: 24px;
+  height: 24px;
+  vertical-align: bottom;
+  margin-right: 20px;
+}
+.cardRPart {
+  margin-left: 40px;
+}
+.userIcon {
+  width: 32px;
+  height: 32px;
+  float: left;
+  position: relative;
+}
+

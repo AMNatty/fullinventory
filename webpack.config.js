@@ -30,6 +30,16 @@ module.exports = {
         }, {
           loader: 'less-loader' // compiles Less to CSS
         }]
+      },
+      {
+        test: /\.(png|jp(e*)g|svg|gif)$/,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            limit: 8000, // Convert images < 8kb to base64 strings
+            name: 'img/[hash]-[name].[ext]'
+          }
+        }]
       }
     ]
   },

@@ -219,7 +219,5 @@ class UserIcon extends React.Component {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  ReactDOM.render(<UserListApp />, document.getElementById('appContainer'));
-  ReactDOM.render(<Footer />, document.getElementById('appFooter'));
-});
+ReactDOM.render(<UserListApp />, document.getElementById('appContainer'));
+ReactDOM.render(<Footer />, document.getElementById('appFooter'));
